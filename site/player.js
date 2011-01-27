@@ -20,7 +20,7 @@ var wikiplayer = function ($) {
     var self = {
         player_started: function () {
             $("#playctrl").click(function () {
-                play(0);
+                self.play(0);
                 return false;
             });
 
