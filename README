@@ -1,0 +1,8 @@
+SoundWiki
+
+A media player wiki like thing. Maybe.
+
+I want some way of documenting a media stream. The only sensible way
+to do it seems to be by time. So this is the beginnings of a webapp to
+let people point at a point in a stream, counted from the beginning
+and comment on it.
