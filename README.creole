@@ -1,0 +1,32 @@
+A media player metadata like thing.
+
+I want some way of documenting a media stream. The only sensible way
+to do it seems to be by time. So this is the beginnings of a webapp to
+let people point at a point in a stream, counted from the beginning
+and comment on it.
+
+
+
+== What is it? ==
+
+A page is an audio stream.
+
+#tags within the page are points in time within the audio stream. You
+can attach comments to the points in time (I call them //moments//)
+
+
+== Status ==
+
+Still very much in development. We don't even have the proper hash
+following stuff yet, its speced [http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html here]
+
+
+== How to bootstrap ==
+
+ * {{{cd toplevel}}}
+ * run {{{ant}}} to build the flash
+ * {{{cd toplevel/tbb}}}
+ * {{{veh rebuild}}} to build the django dependancies
+ * {{{veh shell -- ./manage.py syncdb}}} to make the database
+ * {{{veh shell -- ./manage.py runserver 8003}}} to run on port 8003
+
