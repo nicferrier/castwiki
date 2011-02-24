@@ -18,7 +18,7 @@ can attach comments to the points in time (I call them //moments//)
 == Status ==
 
 Still very much in development. We don't even have the proper hash
-following stuff yet, its speced [http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html here]
+following stuff yet, its speced [[http://www.whatwg.org/specs/web-apps/current-work/multipage/history.html here]]
 
 
 == How to bootstrap ==
