@@ -20,9 +20,8 @@ logging.getLogger("").setLevel(logging.DEBUG)
 
 def episode_comment(request, episode):
     """Add a comment for the episode."""
+
     data = request.POST.copy()
-    import pdb
-    pdb.set_trace()
     comment_request = CommentForm(data)
     if not comment_request.is_valid():
         raise ValidationError("validation failed")
@@ -34,6 +33,7 @@ def episode_comment(request, episode):
         comment=comment_request.cleaned_data["comment"]
         )
     comment.save()
+
     response = HttpResponse(status=201)
     response["Location"] = "%s/%s" % (request.path_info, comment.id)
     return response

@@ -5,10 +5,9 @@
 $(document).ready(function (v) {
     $("#comment").submit(function () {
         // We need to remove the subpoint from the time because the django model doesn't handle it
-        var t = wikiplayer.gettime();
-        var tv = /([0-9]+)(\.[0-9]+)*/.exec(t)[0];
+        var t = Math.round(wikiplayer.gettime());
         // Set the value in the form
-        jQuery("input[name='time']").attr("value", tv) 
+        jQuery("input[name='time']").attr("value", t) 
         // Now serialize the form and send it...
         var form_data = jQuery("#comment").serialize();
         jQuery.ajax({
