@@ -4,12 +4,12 @@
     <property name="mxmlc" location="${flex_dir}/bin/mxmlc"/>
 
     <target name="swf" >
-        <delete file="${basedir}/../site/player.swf"/>
+        <delete file="${basedir}/../tbb/site/player.swf"/>
         <exec executable="${mxmlc}" dir="${basedir}" failonerror="true">
             <arg line="Player.as"/>
             <arg line="-incremental"/>
             <arg line="--target-player=10.0.0"/>
-            <arg line="-output ${basedir}/../site/player.swf"/>
+            <arg line="-output ${basedir}/../tbb/site/player.swf"/>
         </exec>
     </target>
 

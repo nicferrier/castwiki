@@ -1,0 +1,11 @@
+[
+    {
+        "model": "metaize.episode",
+        "pk": 1,
+        "fields": {
+            "url": "http://dl.dropbox.com/u/10330141/TechGrumps_024.mp3",
+            "name": "techgrumps 024",
+            "description": "the boys talk about mumsnet and other things"
+        }
+    }
+]

@@ -1,0 +1,30 @@
+.hidden {
+display: none;
+}
+
+#commentform {
+margin-top: 1em;
+}
+
+label {
+float: left;
+width: 10%;
+text-align: right;
+margin-top: .2em;
+}
+
+input {
+display: block;
+margin-top: .5em;
+margin-left: .5em;
+}
+
+textarea {
+display: block;
+margin-top: .5em;
+margin-left: .5em;
+}
+
+input[type="submit"] {
+margin-left: 10%;
+}

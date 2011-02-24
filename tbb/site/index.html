@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>player</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="swfobject.js"></script>
+        <script src="jquery-1.4.4.min.js"></script>
+        <script src="player.js"></script>
+        <script type="text/javascript" language="javascript">
+            params = {
+            "allowScriptAccess": "always",
+            "wmode": "opaque",
+            "bgcolor": "#ffffff"
+            };
+            swfobject.embedSWF("player.swf", "player", "0px", "0px", "10.0.0", null, "", params);
+        </script>
+    </head>
+    <body>
+        <a class="hidden" href="http://dl.dropbox.com/u/10330141/TechGrumps_024.mp3">audio</a>
+        <a id="audio" href="TechGrumps_024.mp3">audio</a>
+        <div id="player">
+        </div>
+        <button id="playctrl">play</button>
+        <button id="skipback">&lt;&lt;</button>
+        <button id="skipfwd">&gt;&gt;</button>
+        <button id="timectrl">time?</button>
+        <span id="currenttimepanel">?</span>
+    </body>
+</html>
