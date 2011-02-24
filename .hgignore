@@ -2,3 +2,5 @@ syntax:glob
 .venv*
 *~
 *.pyc
+*.swf
+*.swf.cache
