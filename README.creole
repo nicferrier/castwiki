@@ -11,8 +11,9 @@ and comment on it.
 
 A page is an audio stream.
 
-#tags within the page are points in time within the audio stream. You
-can attach comments to the points in time (I call them //moments//)
+fragment identifiers within the page are points in time within the
+audio stream. You can attach comments to the points in time (I call
+them //moments//)
 
 
 == Status ==
