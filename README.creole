@@ -31,3 +31,17 @@ following stuff yet, its speced [[http://www.whatwg.org/specs/web-apps/current-w
  * {{{veh shell -- ./manage.py syncdb}}} to make the database
  * {{{veh shell -- ./manage.py runserver 8003}}} to run on port 8003
 
+
+
+== Bootstrapping Techgrumps ==
+
+I've included an xslt that can scrape the Techgrumps website and
+produce a Django loadfile.
+
+Like this:
+
+{{{
+cd tbb
+xsltproc --html ../tg.xslt http://techgrumps.wordpress.com/ > load.xml
+./manage.py loaddata load.xml
+}}}
