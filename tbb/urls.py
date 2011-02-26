@@ -18,7 +18,8 @@ urlpatterns = patterns(
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
 
-    (r'^e/(?P<name>[ A-Za-z_0-9]+)$', 'metaize.views.episode'),
+    (r'^e/$', 'metaize.views.list'),
+    (r'^e/(?P<name>.+)$', 'metaize.views.episode'),
 
     (r'^_/(?P<path>(.+))$', 'django.views.static.serve', {
             'document_root': settings.MEDIA_ROOT

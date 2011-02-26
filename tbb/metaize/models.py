@@ -1,12 +1,14 @@
 from django.db import models
 from datetime import datetime
-
+from djangoxslt.xslt import managers as xsltmanagers
 # Create your models here.
 
 class Episode(models.Model):
     url = models.URLField(max_length=2000)
     name = models.TextField()
     description = models.TextField(null=True, blank=True)
+    
+    objects = xsltmanagers.RenderingManager()
 
     def __str__(self):
         return self.name

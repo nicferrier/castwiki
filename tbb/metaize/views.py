@@ -50,4 +50,14 @@ def episode(request, name):
             })
     return render_to_response("episode.xslt", ctx)
 
+def list(request):
+    """Render a list of episodes"""
+    ctx = RequestContext(request, {
+            "episodes": Episode.objects.all().xml(
+                name="name",
+                url="url"
+                )
+            })
+    return render_to_response("episodelist.xslt", ctx)
+
 # End
